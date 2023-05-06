@@ -1,0 +1,38 @@
+class Solution{
+public:
+    string stringMirror(string str){
+        // Code here
+        int i;
+        string ans="";
+        ans+=str[0];
+        if(str.size()>=2)
+        {
+            if(str[0] == str[1])
+            {
+                string ans="";
+                ans+=str[0];
+                ans+=str[0];
+                return ans;
+            }
+        }
+        
+        for(i=0;i<str.size();i++)
+        {
+            
+            if(i+1 < str.size())
+            {
+                
+                if(str[i+1] <= str[i])
+                ans+=str[i+1];
+                else
+                break;
+            }
+        }
+        string p;
+        p=ans;
+        reverse(ans.begin(),ans.end());
+        p+=ans;
+        return p;
+    }
+};
+
