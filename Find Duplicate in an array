@@ -1,0 +1,16 @@
+//We have used an unordered map for it so that we can trace the frequency of the elements
+unordered_map<int,int>m;
+        vector<int>ans;
+        for(int i=0;i<n;i++){
+            m[arr[i]]++;
+        }
+        
+        for(int i=0;i<n;i++){
+            if(m[i]>=2)
+            ans.push_back(i);
+           
+        }
+        
+        if(ans.size()>0)
+        return ans;
+        return {-1};
