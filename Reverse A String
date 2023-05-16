@@ -1,0 +1,7 @@
+//Done using STL as shortcut method
+string reverseWord(string str){
+    
+  //Your code here
+  reverse(str.begin(),str.end());
+  return str;
+}
