@@ -1,0 +1,8 @@
+
+pair<long long, long long> getMinMax(long long a[], int n) {
+    sort(a,a+n);
+    pair<long long,long long> ans;
+    ans.first=a[0];
+    ans.second=a[n-1];
+    return ans;
+}
