@@ -1,0 +1,17 @@
+class Solution{
+    public:
+    //Function to find the height of a binary tree.
+    int heights(Node *node)
+    {
+        if(node==NULL)
+        {
+            return 0;
+        }
+        return max(heights(node->left)+1,heights(node->right)+1);
+    }
+    int height(struct Node* node){
+        // code here 
+        int ans=heights(node);
+        return ans;
+    }
+};
