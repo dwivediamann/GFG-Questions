@@ -1,0 +1,20 @@
+class Solution{
+public:	
+	vector<int> kLargest(int arr[], int n, int k) {
+	    // code here
+	    sort(arr,arr+n);
+	    reverse(arr,arr+n);
+	    vector<int> vec;
+	    int i=0;
+	    while(vec.size()!=k)
+	    {
+	        
+	        
+	            vec.push_back(arr[i]);
+	            i++;
+	       
+	    }
+	    return vec;
+	}
+
+};
