@@ -1,0 +1,15 @@
+
+class Solution
+{
+    public:
+    void display(Node *head)
+    {
+      //your code goes here
+      Node *t=head;
+      while(t!=NULL)
+      { 
+          cout<<t->data<<" ";
+          t=t->next;
+      }
+    }
+};
